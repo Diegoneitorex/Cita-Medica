@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Consulta Médica</title>
+</head>
+<body>
+    <header>
+        <h1>Consulta Médica</h1>
+    </header>
+    <div class="container">
+        <h2>Formulario de Cita</h2>
+        <form id="appointmentForm">
+            <label for="name">Nombre Completo:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="age">Edad:</label>
+            <input type="number" id="age" name="age" required min="0" max="120">
+
+            <label for="gender">Género:</label>
+            <select id="gender" name="gender" required>
+                <option value="">Seleccione</option>
+                <option value="masculino">Masculino</option>
+                <option value="femenino">Femenino</option>
+                <option value="otro">Otro</option>
+            </select>
+
+            <label for="symptoms">Síntomas:</label>
+            <textarea id="symptoms" name="symptoms" rows="4" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+        <div id="result" class="result" style="display:none;"></div>
+    </div>
+
+    <script>
+        document.getElementById('appointmentForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const age = document.getElementById('age').value;
+            const gender = document.getElementById('gender').value;
+            const symptoms = document.getElementById('symptoms').value;
+
+            const resultDiv = document.getElementById('result');
+            resultDiv.style.display = 'block';
+            resultDiv.textContent = `Gracias, ${name}. Su cita ha sido registrada.
+            Edad: ${age}, Género: ${gender}, Síntomas: ${symptoms}`;
+        });
+    </script>
+
+</body>
+</html>
