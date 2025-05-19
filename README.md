@@ -37,7 +37,7 @@ To get a local copy up and running follow these simple example steps.
 
 ## Authors
 
-👤 **Arístides José Molina Pérez**
+👤 **Diego Andres Rivero Fernandez**
 
 - GitHub: [@Diegoneitorex](https://github.com/Diegoneitorex)
 - Twitter: [@Diegoneitorex](https://twitter.com/Diegoneitorex)
@@ -46,7 +46,7 @@ To get a local copy up and running follow these simple example steps.
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Diegoneitorex/Ventas-de-Casa/issues).
+Feel free to check the [issues page](https://github.com/Diegoneitorex/Cita-Medica/issues).
 
 ## Show your support
 
